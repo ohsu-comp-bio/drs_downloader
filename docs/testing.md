@@ -4,9 +4,9 @@ Thank you for trying out the DRS Downloader! This project was developed by our t
 
 ## Installation
 
-First navigate to the documentation page at <URL> and select the "drs_downloader" link for your operating system. You may also choose to download the checksums file in order to verify the file integrity (instructions on how to do so may be found <here>).
+First navigate to the documentation page [here](https://ohsu-comp-bio.github.io/drs_downloader/index.html#installation) and select the "drs_downloader" link for your operating system. You may also choose to download the checksums file in order to verify the file integrity (instructions on how to do so may be found [here](https://ohsu-comp-bio.github.io/drs_downloader/index.html#checksum-verification)).
 
-We'll be using <this manifest file> for the downloading, but feel free to substitute it for any valid manifest file as well. The one we link to includes a variety of file types and sizes to test against our program.
+We'll be using this manifest file for the downloading, but feel free to substitute it for any valid manifest file as well. The one we link to includes a variety of file types and sizes to test against our program.
 
 With the `drs_downloader` program and manifest file in place we're now ready to authenticate with Google. In order to do so we'll use the the `gcloud` CLI program provided by Google. Instructions for the installation of `gcloud` may be found [here](https://cloud.google.com/sdk/docs/install) and are replicated below:
 - Download the `tar.gz` archive for your OS
