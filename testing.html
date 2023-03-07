@@ -537,7 +537,7 @@
 <p>Thank you for trying out the DRS Downloader! This project was developed by our team of developers here at OHSU and the Broad Institute for use in The AnVIL ecosystem. We are excited to hear any feedback or suggestions based off of your experience with it! Let's get started.</p>
 <h2 id="installation">Installation</h2>
 <p>First navigate to the documentation page <a href="https://ohsu-comp-bio.github.io/drs_downloader/index.html#installation">here</a> and select the "drs_downloader" link for your operating system. You may also choose to download the checksums file in order to verify the file integrity (instructions on how to do so may be found <a href="https://ohsu-comp-bio.github.io/drs_downloader/index.html#checksum-verification">here</a>).</p>
-<p>We'll be using this manifest file for the downloading, but feel free to substitute it for any valid manifest file as well. The one we link to includes a variety of file types and sizes to test against our program.</p>
+<p>We'll be using this <a href="https://raw.githubusercontent.com/ohsu-comp-bio/drs_downloader/main/tests/fixtures/terra-data.tsv">manifest file</a> for the downloading, but feel free to substitute it for any valid manifest file as well. The one we link to includes a variety of file types and sizes to test against our program.</p>
 <p>With the <code>drs_downloader</code> program and manifest file in place we're now ready to authenticate with Google. In order to do so we'll use the the <code>gcloud</code> CLI program provided by Google. Instructions for the installation of <code>gcloud</code> may be found <a href="https://cloud.google.com/sdk/docs/install">here</a> and are replicated below:
 - Download the <code>tar.gz</code> archive for your OS
 - Extract the archive to your home directory
@@ -546,7 +546,7 @@
 <h2 id="use">Use</h2>
 <p>Now that we've successfully authenticated with Google we're ready to start the downloading! Verify that the DRS downloader is ready to use by entering <code>drs_downloader terra --help</code>. This should output all available flags and options for the <code>terra</code> download function.</p>
 <p>Now let's start the download process! We'll specify our manifest file and the destination we wish to download to, in this the <code>/tmp</code> directory:</p>
-<pre><code class="language-sh">drs_downloader terra --manifest_path &lt;MANIFEST&gt; --destination_dir /tmp
+<pre><code class="language-sh">drs_downloader terra --manifest_path terra-data.tsv --destination_dir /tmp
 </code></pre>
 <p>This command will output the progress of the download process. Upon completion we can verify that the files were successfully downloaded by looking at the destination directory.</p>
 
