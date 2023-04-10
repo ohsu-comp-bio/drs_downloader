@@ -225,6 +225,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#supported-os-versions" class="md-nav__link">
+    Supported OS Versions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#checksum-verification" class="md-nav__link">
     Checksum Verification
   </a>
@@ -613,6 +620,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#supported-os-versions" class="md-nav__link">
+    Supported OS Versions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#checksum-verification" class="md-nav__link">
     Checksum Verification
   </a>
@@ -782,23 +796,36 @@
 </tbody>
 </table>
 <p>Download the latest <code>drs_downloader</code> zip file for your operating system. Unzipping the downloaded file will provide a <code>drs_downloader</code> executable file that can be run directly.</p>
-<details>
-<summary>Supported OS Versions</summary>
-
-| Operating System | Supported Versions             |
-| ---------------- | ------------------------------ |
-| macOS            | 12 (Monterey), 13 (Ventura)    |
-| Linux            | Ubuntu 22.04 (Jammy Jellyfish) |
-| Windows          | Windows 11                     |
-
-_Notes_:
-
-- Testing was done on hardware running macOS Monterey and Ventura (Apple Silicon M1 chips), with Windows and Linux emulation through [UTM](https://mac.getutm.app/).
-- Due to hardware limitations with the ARM M1 chips, Windows 10 was not included in the list of tested operated systems as Microsoft does not currently provide a public Windows 10 ARM build.
-- Ubuntu 20.04 (Focal Fossa) uses version 2.31 of the GNU C Library which appears to be incompatible with Python 3.10 requirement of version 2.35.
-
+<h3 id="supported-os-versions">Supported OS Versions</h3>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Supported Versions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>macOS</td>
+<td>12 (Monterey), 13 (Ventura)</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>Ubuntu 22.04 (Jammy Jellyfish)</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>Windows 11</td>
+</tr>
+</tbody>
+</table>
+<p><em>Notes</em>:</p>
+<ul>
+<li>Testing was done on hardware running macOS Monterey and Ventura (Apple Silicon M1 chips), with Windows and Linux emulation through <a href="https://mac.getutm.app/">UTM</a>.</li>
+<li>Due to hardware limitations with the ARM M1 chips, Windows 10 was not included in the list of tested operated systems as Microsoft does not currently provide a public Windows 10 ARM build.</li>
+<li>Ubuntu 20.04 (Focal Fossa) uses version 2.31 of the GNU C Library which appears to be incompatible with Python 3.10 requirement of version 2.35.</li>
+</ul>
 </details>
-
 <h3 id="checksum-verification">Checksum Verification</h3>
 <p>In order to verify that the downloaded file can be trusted checksums are provided in <a href="https://github.com/anvilproject/drs_downloader/releases/latest/download/checksums.txt"><code>checksums.txt</code></a>. See below for examples of how to use this file.</p>
 <details>
